@@ -19,6 +19,7 @@ jobs:
       - name: Print goodbye
         run: echo "Done - bye"
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code
